@@ -12,7 +12,7 @@
 }
 
 :root {
-    --color-bg: #1F1F38;
+    --color-bg: #111434;
     --color-bg-variant: #2C2C6C;
     --color-primary: #4DB5FF;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -39,11 +39,11 @@ body {
 /* =============== GENERAL STYLE ================ */
 .container {
     /* width: var(--container-width-lg); */
-    margin: 10px, auto;
+    margin: auto 100px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: 5OO;
+    font-weight: 500;
 }
 
 h1 {

@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     overflow: hidden;
-    padding-top: 7rem;
+    padding-top: 5rem;
 }
 
 .header__container {
@@ -10,12 +10,24 @@ header {
     position: relative;
 }
 
+.header__name {
+    padding: 2rem 0 1rem;
+}
+
 /*=============== CTA ================*/
 .cta {
     margin-top: 2.5rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
+}
+
+.cta a {
+    display: flex;
+    gap: 0.2rem;
+}
+.cta__icon {
+    margin-top: 6px;
 }
 
 /*=============== HEADER SOCIALS ================*/
@@ -38,10 +50,10 @@ header {
 /*=============== ME ================*/
 .me {
     background: linear-gradient(var(--color-primary), transparent); 
-    width: 22rem;
-    height: 30rem;
+    width: 20rem;
+    height: auto;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: calc(50% - 10rem);
     margin-top: 4rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
@@ -72,5 +84,8 @@ header {
     }
     .header__socials, .scroll__down {
         display: none;
+    }
+    .cta {
+        font-size: 0.9rem;
     }
 }
