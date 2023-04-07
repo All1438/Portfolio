@@ -39,7 +39,7 @@ function about() {
             </article>
           </div>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit modi nihil nostrum porro iusto recusandae hic atque vero totam culpa laborum numquam aperiam eos, sunt iste nobis assumenda labore voluptas.</p>
+          <p>Software developer</p>
 
           <a href="#contact" className='btn btn-primary'>Let's talk</a>
         </div>

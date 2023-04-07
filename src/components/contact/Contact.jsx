@@ -11,10 +11,12 @@ function Contact() {
   const form = useRef(); //rel={}
 
   const sendEmail = (e) => { //onSubmit={}
-    e.preventDefault();
+    e.preventDefault()
+    
+    emailjs.sendForm('service_bys6u2a', 'template_zq1kl5a', form.current, 'uWXlbCd7_NIeQpk8C') //('Email Services', 'Email Templates', form.current, )
+
     e.target.reset()
 
-    emailjs.sendForm('service_bys6u2a', 'template_zq1kl5a', form.current, 'uWXlbCd7_NIeQpk8C')
   };
   return (
     <section id='contact'>
