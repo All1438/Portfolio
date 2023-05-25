@@ -34,11 +34,9 @@ body {
     background-color: var(--color-bg);
     color: #FFF;
     line-height: 1.7rem;
-    /* background-image: url(./assets/pngwing2.png); */
 }
 /* =============== GENERAL STYLE ================ */
 .container {
-    /* width: var(--container-width-lg); */
     margin: auto 100px;
 }
 

@@ -19,11 +19,12 @@ footer a {
 
 .permalinks {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
     margin: 0 auto 3rem;
-    text-align: center;
+    /* text-align: center; */
     padding: 0 22rem;
+    justify-content: center;
 }
 
 .footer__socials {
@@ -51,6 +52,14 @@ footer a {
 .footer__copyright {
     margin-bottom: 4rem;
     color: var(--color-bg);
+}
+
+@media screen and (max-width: 1024px) {
+    .permalinks {
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0 15rem;
+    }    
 }
 
 /*=============== MEDIA QUERIES (SMALL DEVICES) ================*/

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
+    margin: auto 100px;
 }
 
 .about__me {
@@ -9,7 +10,7 @@
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-    display: grid;
+    /* display: grid; */
     place-items: center;
 }
 
@@ -65,15 +66,23 @@
     color: var(--color-light);
 }
 
-/*=============== MEDIA QUERIES (MEDIUM DEVICES) ================*/
 @media screen and (max-width: 1024px) {
+    .about__container {
+        gap: 7%;
+        margin: auto 50px;
+    }
+}
+
+/*=============== MEDIA QUERIES (MEDIUM DEVICES) ================*/
+@media screen and (max-width: 830px) {
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
     }
-    .about_me {
-        width: 50%;
-        margin: 2rem auto 4rem;
+    .about__me {
+        display: none;
+        /* width: 50%;
+        margin: 2rem auto 4rem; */
     }
     .about__content p {
         margin: 1rem 0 1.5rem;
@@ -83,6 +92,7 @@
 /*=============== MEDIA QUERIES (SMALL DEVICES) ================*/
 @media screen and (max-width: 600px) {
     .about__me {
+        display: grid;
         width: 65%;
         margin: 0 auto 3rem;
     }
