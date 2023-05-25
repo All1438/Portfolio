@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-img {
+.img {
     aspect-ratio: 1/1;
     height: 300px;
     border-radius: 4rem;
@@ -81,7 +81,7 @@ img {
         width: 100%;
     }
     
-    img {
+    .img {
         height: 220px;
     }
 }
