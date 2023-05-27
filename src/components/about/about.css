@@ -70,6 +70,12 @@
 @media screen and (max-width: 1024px) {
     .about__container {
         gap: 7%;
+        /* margin: auto 50px; */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about__container {
         margin: auto 50px;
     }
 }

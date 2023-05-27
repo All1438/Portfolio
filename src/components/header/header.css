@@ -83,6 +83,8 @@ header {
     }
 }
 
+
+
 /*=============== MEDIA QUERIES (SMALL DEVICES) ================*/
 @media screen and (max-width: 600px) {
     header {

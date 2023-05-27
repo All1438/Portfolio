@@ -1,9 +1,12 @@
 import React from 'react'
 import './portfolio.css'
 
+// import Swiper core and required modules
 import { Pagination, Navigation } from 'swiper'
 import { SwiperSlide, Swiper } from 'swiper/react'
+// import Swiper Style
 import 'swiper/css'
+// import Style spécialisée
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
@@ -16,17 +19,19 @@ const data = [
   {
     image: IMG2,
     title: 'Discord Lite',
-    langage: '(Django)'
+    langage: '(Django)',
   },
   {
     image: IMG1,
     title: 'Portfolio',
-    langage: '(React Js)'
+    langage: '(React Js)',
+    url: 'https://github.com/All1438/Portfolio',
   },
   {
     image: IMG3,
     title: 'Note App',
-    langage: '(Django-React)'
+    langage: '(Django-React)',
+    url: 'https://github.com/All1438/NoteApp-Django-React'
   },
   {
     image: IMG4,
@@ -41,6 +46,7 @@ const Portfolio = () => {
       <h2>Projects</h2>
 
       <Swiper className="portfolio__container"
+      // l'import doit être dans la balise Swiper
       modules={[Pagination, Navigation]}
       spaceBetween={1000}
       slidesPerView={1}
@@ -48,7 +54,7 @@ const Portfolio = () => {
       navigation={{ clickable: true }}
       >
       {
-        data.map(({image, title, langage}, index) => {
+        data.map(({image, title, langage, url}, index) => { // On utilise index ici au lieu de id
           return(
             <SwiperSlide key={index}>
               <div className="portfolio__item">
@@ -56,7 +62,9 @@ const Portfolio = () => {
                     <h3 className="text__light">{title} <span className="text__light">{langage}</span></h3>
                   </div>
                   <div className="portfolio__item-img">
-                    <img src={image} alt={title} className='img' />
+                    <a href={url} target="_blank" rel="noreferrer" className='img'>
+                       <img src={image} alt={title} className='img' />
+                    </a>
                   </div>
               </div>
             </SwiperSlide>

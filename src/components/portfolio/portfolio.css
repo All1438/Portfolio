@@ -13,6 +13,7 @@
     user-select: none;
     display: block;
     transition: all .3s ease-in-out;
+    height: 300px;
 
 }
 
@@ -32,10 +33,17 @@
 
 .img {
     aspect-ratio: 1/1;
-    height: 300px;
+    height: 100%;
     border-radius: 4rem;
     overflow: hidden;
     width: 100%;
+    background-size: 96%;
+    justify-content: center;
+}
+.img:hover {
+    height: 301px;
+    width: 641px;
+    background-size: 97%;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullets .swiper-pagination-horizontal { /*il faut l'inspecter pour avoir la tag en css*/
