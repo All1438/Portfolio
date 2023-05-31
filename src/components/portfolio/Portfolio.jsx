@@ -20,7 +20,8 @@ const data = [
     image: IMG2,
     title: 'Discord Lite',
     langage: '(Django)',
-    classN: 'img__discord'
+    classN: 'img__discord',
+    url: 'https://github.com/All1438/DiscordLite__Django'
   },
   {
     image: IMG1,
@@ -58,7 +59,7 @@ const Portfolio = () => {
       navigation={{ clickable: true }}
       >
       {
-        data.map(({classN,title, langage, url}, index) => { // On utilise index ici au lieu de id
+        data.map(({image, title, langage, url}, index) => { // On utilise index ici au lieu de id
           return(
             <SwiperSlide key={index}>
               <div className="portfolio__item">
@@ -66,8 +67,8 @@ const Portfolio = () => {
                     <h3 className="text__light">{title} <span className="text__light">{langage}</span></h3>
                   </div>
                   <div className="portfolio__item-img">
-                    <a href={url} target="_blank" rel="noreferrer" className={classN}>
-                      
+                    <a href={url} target="_blank" rel="noreferrer">
+                     <img src={image} alt={title} className='img' />
                     </a>
                   </div>
               </div>

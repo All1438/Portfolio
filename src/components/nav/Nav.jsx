@@ -12,7 +12,7 @@ const Nav = () => {
       <a href="#header" onClick={() => setState("#header")} className={state === "#header" ? "active" : " "}><GoHome/ ></a> {/*state est utiliser pour la  verification */}
       <a href="#about" onClick={() => setState("#about")} className={state === "#about" ? "active" : " "}><RiAccountPinCircleLine/ ></a>
       <a href="#experience" onClick={() => setState("#experience")} className={state === "#experience" ? "active" : " "}><BiBook/ ></a>
-      <a href="#services" onClick={() => setState("#services")} className={state === "#services" ? "active" : " "}><RiServiceLine/ ></a>
+      <a href="#portfolio" onClick={() => setState("#portfolio")} className={state === "#portfolio" ? "active" : " "}><RiServiceLine/ ></a>
       <a href="#contact"onClick={() => setState("#contact")} className={state === "#contact" ? "active" : " "}><RiMessage2Line/ ></a>
     </nav>
   )

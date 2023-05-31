@@ -39,8 +39,7 @@ function about() {
             </article>
           </div>
 
-          <p>Software developer</p>
-
+          <p>I'm a software developer with solid knowledge of HTML, CSS, React and Django. I look forward to contributing to exciting projects and bringing my creativity and technical insight to help companies achieve their goals.</p>
           <a href="#contact" className="btn btn-primary">
             Let's talk
           </a>
