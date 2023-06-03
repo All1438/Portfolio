@@ -100,3 +100,9 @@ header {
         font-size: 30px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .header__name {
+        font-size: 25px;
+    }
+}
