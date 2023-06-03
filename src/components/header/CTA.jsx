@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../assets/CV.pdf'
+import CV from '../../assets/CV2.pdf'
 import {BiDownload} from 'react-icons/bi'
 
 const CTA = () => {
