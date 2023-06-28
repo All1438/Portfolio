@@ -1,6 +1,53 @@
 import React from 'react'
 import './experience.css'
-import {HiShieldCheck} from 'react-icons/hi'
+import {SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiDjango, SiFastapi} from 'react-icons/si'
+import {FaReact, FaPython} from 'react-icons/fa'
+
+const dataF = [
+  {
+    name: 'HTML',
+    level: 'Experienced',
+    Icon: SiHtml5
+  },
+  {
+    name: 'CSS',
+    level: 'Experienced',
+    Icon: SiCss3
+  },
+  {
+    name: 'Bootstrap',
+    level: 'Intermediate',
+    Icon: SiBootstrap
+  },
+  {
+    name: 'JavaScript',
+    level: 'Intermediate',
+    Icon: SiJavascript
+  },
+  {
+    name: 'React Js',
+    level: 'Intermediate',
+    Icon: FaReact
+  }
+]
+
+const dataB = [
+  {
+    name: 'Python',
+    level: 'Basic',
+    Icon: FaPython
+  },
+  {
+    name: 'Django',
+    level: 'Intermediate',
+    Icon: SiDjango
+  },
+  {
+    name: 'FastAPI',
+    level: 'Intermediate',
+    Icon: SiFastapi
+  }
+]
 
 const Experience = () => {
   return (
@@ -12,61 +59,39 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Frontend development</h3>
           <div className="experience__content">
-            <article className="experience__detail">
-              <HiShieldCheck className='experience__details-icon'/ >
-              <div>
-                <h4>HTML</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <HiShieldCheck className='experience__details-icon'/ >
-              <div>
-                <h4>CSS</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <HiShieldCheck className='experience__details-icon'/ >
-              <div>
-                <h4>Bootstrap</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <HiShieldCheck className='experience__details-icon'/ >
-              <div>
-                <h4>JavaScript</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <HiShieldCheck className='experience__details-icon'/ >
-              <div>
-                <h4>React Js</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
+            {
+            dataF.map(({name, level, Icon}, index) => {
+              return (
+              <article className="experience__detail" key={index}>
+                {Icon && <Icon className='experience__details-icon'/ >} 
+                {/* permet d'utiliser l'icon en composants JSX, et le mettre en majuscule */}
+                <div>
+                  <h4>{name}</h4>
+                  <small className='text-light'>{level}</small>
+                </div>
+              </article>
+              )
+            })
+            }
           </div>
         </div>
 
         <div className="experience__backend">
           <h3>Backend development</h3>
           <div className="experience__content">
-            <article className="experience__detail">
-              <HiShieldCheck className='experience__details-icon'/ >
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-            <article className="experience__detail">
-              <HiShieldCheck className='experience__details-icon'/ >
-              <div>
-                <h4>Django</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
+            {
+              dataB.map(({name, level, Icon}, index) => {
+                return(
+                  <article className="experience__detail" key={index}>
+                    <Icon className='experience__details-icon'/ >
+                    <div>
+                      <h4>{name}</h4>
+                      <small className='text-light'>{level}</small>
+                    </div>
+                  </article>
+                )
+              })
+            }
           </div>
         </div>
       </div>

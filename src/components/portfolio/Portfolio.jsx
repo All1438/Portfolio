@@ -14,6 +14,7 @@ import IMG1 from '../../assets/Portfolio.png'
 import IMG2 from '../../assets/Discord_Lite.png'
 import IMG3 from '../../assets/Note_App.png'
 import IMG4 from '../../assets/coming_soon.png'
+import IMG5 from  '../../assets/NoteApp_FastAPI.png'
 
 const data = [
   {
@@ -33,9 +34,16 @@ const data = [
   {
     image: IMG3,
     title: 'Note App',
-    langage: '(Django-React)',
+    langage: '(Django+ReactJS)',
     url: 'https://github.com/All1438/NoteApp-Django-React',
     classN: 'img__note'
+  },
+  {
+    image: IMG5,
+    title: 'Note App',
+    langage: '(FastAPI+ReactJS with HarperDB)',
+    url: 'https://github.com/All1438/NoteApp__FastApi-ReactJs-HarperDB',
+    classN: 'img__noteFastAPI'
   },
   {
     image: IMG4,

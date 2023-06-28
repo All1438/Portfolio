@@ -35,11 +35,11 @@ function about() {
             <article className="about__card">
               <VscFolderActive className="about__icon" />
               <h5>Projets</h5>
-              <small>3 Completed</small>
+              <small>4 Completed</small>
             </article>
           </div>
 
-          <p>I'm a software developer with solid knowledge of HTML, CSS, React and Django. I look forward to contributing to exciting projects and bringing my creativity and technical insight to help companies achieve their goals.</p>
+          <p>I'm a Web developer with solid knowledge of HTML, CSS, React and Django. I look forward to contributing to exciting projects and bringing my creativity and technical insight to help companies achieve their goals.</p>
           <a href="#contact" className="btn btn-primary">
             Let's talk
           </a>

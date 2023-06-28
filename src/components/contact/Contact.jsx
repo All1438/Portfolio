@@ -40,7 +40,7 @@ function Contact() {
           </article>
           <article className="contact__option">
             <BiPhoneCall className='contact__option-icon'/ >
-            <h4>Appel</h4>
+            <h4>Call</h4>
             <h5>+231 34 04 180 32</h5>
             <a href="tel:0340418032">Call</a>
           </article>
