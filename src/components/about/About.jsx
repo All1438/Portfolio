@@ -5,7 +5,7 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderActive } from "react-icons/vsc";
 
-function about() {
+function About() {
   return (
     <section id="about">
       <h5>Get To Know</h5>
@@ -49,4 +49,4 @@ function about() {
   );
 }
 
-export default about;
+export default About;

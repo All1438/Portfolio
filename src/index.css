@@ -17,6 +17,7 @@
     --color-primary: #4DB5FF;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-light: rgba(255, 255, 255, 0.6);
+    
 
     --transition: all 500ms ease;
 
@@ -115,7 +116,7 @@ img {
 /*=============== MEDIA QUERIES (SMALL DEVICES) ================*/
 @media screen and (max-width: 600px) {
     .container {
-        width: var(--container-width-ms);
+        width: var(--container-width-sm);
     }
     section > h2 {
         margin-bottom: 2rem;
