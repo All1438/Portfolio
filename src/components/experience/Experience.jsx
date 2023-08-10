@@ -1,6 +1,6 @@
 import React from 'react'
 import './experience.css'
-import {SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiDjango, SiFastapi} from 'react-icons/si'
+import {SiHtml5, SiCss3, SiJavascript, SiTailwindcss, SiDjango, SiFastapi} from 'react-icons/si'
 import {FaReact, FaPython} from 'react-icons/fa'
 
 const dataF = [
@@ -15,9 +15,9 @@ const dataF = [
     Icon: SiCss3
   },
   {
-    name: 'Bootstrap',
+    name: 'Tailwind',
     level: 'Intermediate',
-    Icon: SiBootstrap
+    Icon: SiTailwindcss
   },
   {
     name: 'JavaScript',
